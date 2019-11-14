@@ -40,6 +40,10 @@ window.onload = function() {
 
   }
 
+  function removeClick(arr) {
+     arr.pop();
+  }
+
    var arrElemLi = setImagesToWindow( arr_images, nodes );
 
    var li = [];
@@ -55,30 +59,24 @@ window.onload = function() {
 
         updateBackground( li, "green", "rotate3d(2, 90, 2, 180deg)", 10);
 
-         div[0].appendChild(this.firstChild);
-
+         if(div[0].children.length != 2) {
+            div[0].appendChild(this.firstChild);
 
           if(div[0].children.length == 2) {
-
             var one = div[0].firstElementChild.getAttribute("src");
             var two = div[0].lastElementChild.getAttribute("src");
 
               if(one == two) {
                 setTimeout(function() {
-            //      alert("yes");
-                  userWinner();
-            //      div[0].innerHTML = "";
+                  showUserWinnerOrLoss("Поздравляем !");
                 }, 1000);
               }else {
                 setTimeout(function() {
-              //    alert("no");
-              //   userLoss();
-                userWinner();
-              //    div[0].innerHTML = "";
+                  showUserWinnerOrLoss("В следуюший раз...");
                 }, 1000);
               }
-
-          }
+           }
+         }
        });
      }
 
@@ -100,16 +98,18 @@ window.onload = function() {
    }
    buttonTryAgaine();
 
-   function userWinner() {
+   function showUserWinnerOrLoss(str) {
      var createNewElemDiv = document.createElement("div");
      createNewElemDiv.className = "winner";
 
      var createNewElemP = document.createElement("p");
-     createNewElemP.innerHTML = "Поздравляем !";
+     createNewElemP.innerHTML = str;
 
      createNewElemDiv.appendChild( createNewElemP );
 
      var elemFromDom = document.getElementsByClassName("block_windows");
      elemFromDom[0].appendChild( createNewElemDiv );
    }
+
+   
 }
