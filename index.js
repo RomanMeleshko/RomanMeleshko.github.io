@@ -40,10 +40,6 @@ window.onload = function() {
 
   }
 
-  function removeClick(arr) {
-     arr.pop();
-  }
-
    var arrElemLi = setImagesToWindow( arr_images, nodes );
 
    var li = [];
@@ -83,6 +79,7 @@ window.onload = function() {
    }
    setChooise( arrElemLi );
 
+   // функция обнуления игрового поля
    function buttonTryAgaine() {
      var button = document.getElementsByClassName("button");
      var div = document.getElementsByClassName("result");
@@ -98,6 +95,7 @@ window.onload = function() {
    }
    buttonTryAgaine();
 
+  // функция показывающая всплывающий popap 
    function showUserWinnerOrLoss(str) {
      var createNewElemDiv = document.createElement("div");
      createNewElemDiv.className = "winner";
@@ -111,5 +109,5 @@ window.onload = function() {
      elemFromDom[0].appendChild( createNewElemDiv );
    }
 
-   
+
 }

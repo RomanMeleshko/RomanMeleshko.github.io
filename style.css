@@ -85,12 +85,13 @@ h2 {
 /*  стили меню */
 .menu {
   padding: 20px;
-  background: #490;
+  background: #276773;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
+
 .menu:before {
   content: "";
   position: absolute;
@@ -98,6 +99,7 @@ h2 {
   background: #299;
   transition: all 0.7s ease;
   width: 0px;
+
 }
 .menu:hover::before {
   width: 100%;
@@ -507,14 +509,7 @@ li {
   text-align: center;
 }
 
-/* .block_game div li:active {
-  transform: rotate3d(2, 90, 2, 180deg);
-}
-/* @keyframes move {
-  0% { transform: rotate3d(2, 90, 2, 0deg); }
-  50% { transform: rotate3d(2, 90, 2, 180deg); }
-  100% { transform: rotate3d(2, 90, 2, 0deg); }
-} */
+
 .block_game div li img {
   top: 50%;
   left: 50%;
