@@ -1,0 +1,19 @@
+/*  подключаем шрифты */
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/9625.ttf);
+}
+* {
+    font-family: Lato-Light;
+}
+body {
+    background: #f9fad3;
+}
+.block-home__icons .d-flex > div {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+.block-home__icons .d-flex > div:hover {
+    box-shadow: 0px 0px 15px black;
+}
