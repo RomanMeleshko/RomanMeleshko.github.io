@@ -17,3 +17,9 @@ body {
 .block-home__icons .d-flex > div:hover {
     box-shadow: 0px 0px 15px black;
 }
+.block-resume__header-line > p {
+    font-size: 30px;
+}
+.block-resume li {
+    list-style-type: none;
+}
