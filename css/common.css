@@ -3,23 +3,128 @@
     font-family: Lato-Light;
     src: url(../fonts/9625.ttf);
 }
+@font-face {
+    font-family: CM-Literata;
+    src: url(../fonts/17758.ttf);
+}
+@font-face {
+    font-family: ljk_Downcome;
+    src: url(../fonts/17666.otf);
+}
+@font-face {
+    font-family: SoftLine Book;
+    src: url(../fonts/17489.ttf);
+}
+
+
 * {
     font-family: Lato-Light;
 }
+
+
+
 body {
-    background: #f9fad3;
+    background: rgba(18, 24, 17, 0.78);
+
 }
-.block-home__icons .d-flex > div {
-    width: 40px;
-    height: 40px;
-    transition: 0.3s;
+/*body:before {*/
+/*    content: "";*/
+
+/*    position: absolute;*/
+/*    top: 0px;*/
+/*    left: 0px;*/
+/*    z-index: 1;*/
+/*    border: 200px solid transparent;*/
+/*    border-bottom: 200px solid green;*/
+/*    border-left: 200px solid green;*/
+
+/*}*/
+
+.block-home__text {
+    padding: 50px;
+    background: #403b39;
+    font-size: 25px;
+    color: #fff;
 }
-.block-home__icons .d-flex > div:hover {
-    box-shadow: 0px 0px 15px black;
+.block-home__text > span {
+    font-family: ljk_Downcome;
 }
-.block-resume__header-line > p {
-    font-size: 30px;
+.block-home__text:before {
+    content: "Front end";
+    width: 140px;
+    height: 160px;
+    position: absolute;
+    background: #c1bf20;
+    left: 5%;
+    top: 0%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    font-family: ljk_Downcome;
+    color: #4c4c4d;
+    z-index: 2;
+    font-size: 35px;
 }
-.block-resume li {
+
+.block-resume__me,
+.block-resume__education,
+.block-resume__work,
+.block-resume__hobby {
+    border: 3px solid #c1bf20;
+    box-shadow: inset 0px 0px 30px #566769;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-resume__icon {
+    border: 2px solid #5b8074;
+    width: 100px;
+    height: 100px;
+}
+
+li {
     list-style-type: none;
 }
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+.icon:hover {
+    box-shadow: 0px 0px 20px #feffb4;
+}
+.text-color {
+    color: #f4f664;
+}
+
+.block-home__logo > span {
+    font-family: ljk_Downcome;
+    font-size: 35px;
+    background: red;
+}
+.block-home__logo-text:after {
+    content: "";
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 2px solid #c1bf20;
+    animation: move 3s ease-in-out infinite;
+}
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+

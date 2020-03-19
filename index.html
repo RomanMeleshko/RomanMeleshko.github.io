@@ -10,10 +10,6 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        <!--  Swiper  -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
          <!-- подключаем файл style.css локально из пк -->
          <link rel="stylesheet" href="css/app.css">
 
@@ -23,133 +19,109 @@
         <!-- подключаем файл main.js локально из пк -->
          <script src="main.js" type="text/javascript"></script>
 
-        <!-- подключаем файл index.js локально из пк -->
-<!--        <script src="index.js" type="text/javascript"></script>-->
-
-
     </head>
     <body>
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="card-wrapper">
             <div class="block-home">
                 <header>
                     <div class="block-home__block-header">
 
-                        <nav class="navbar navbar-expand-lg navbar-light" style="background: #7f8559">
-                            <a class="navbar-brand text-white" href="#">
-                                <i class="fab fa-html5" style="color: #bdff5c"></i>
-                                Front-End
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                        <div class="row">
+                           <div class="col-12 block-home__text text-right">
+                               <span class="">Мелешко Роман</span>
+                           </div>
+                       </div>
 
-
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                               <!-- Left Side of Navbar -->
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
-
-                                    </li>
-                                    <li class="nav-item">
-
-                                    </li>
-
-                                </ul>
-
-                                <!-- Right Side Of Navbar -->
-                                <ul class="navbar-nav ml-auto mr-4">
-
-                                    <li class="nav-item" >
-                                        <a class="nav-link text-white" href="#about-me"><i class="fas fa-user-tie"></i>  Про меня</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white" href="#education"><i class="fas fa-university"></i> Образование</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white" href="#my_progress"><i class="fas fa-trophy"></i></i> Достижения</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white" href="#hobby"><i class="fas fa-paint-brush"></i> Увлечения</a>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </nav>
                     </div>
                 </header>
 
-                <div class="container">
-                    <div class="card-wrapper">
-                        <div class="block-resume">
-                            <div class="row">
-                                <div class="col-12 text-center p-3">
-                                    <div class="block-resume__header-line">
-                                        <p>Резюме</p>
+                <div class="container mt-5">
+                    <div class="block-resume">
+
+                        <div class="block-resume__me">
+                            <div class="row justify-content-center">
+                                <div class="col-12 center mx-auto p-2">
+                                    <div class="block-resume__icon rounded-circle center">
+                                        <i class="fas fa-user-circle" style="color: #bdff5c; font-size: 90px"></i>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="block-resume__info">
+                            </div>
+                            <div class="row justify-content-center text-white">
+                                <div class="col-10">
+                                    <div class="block-resume_text-me text-center">
                                         <p>
                                             Всех приветствую на моей странице. Мне нравиться, все что связано с web разработкой.
-                                            Имею опыт работы с коммерческими пректами такими на <b>Laravel.</b> Так же есть опыт
+                                            Имею опыт работы с коммерческими пректами на <b>Laravel.</b> Так же есть опыт
                                             разработки Android приложений. К обязяностям отношусь с полной ответственностью.
-                                             Работаю с фрейморками<b>React JS, Redux, NativeScript, Vue JS.</b> Уровень английского <i>intermediate</i>
+                                            Работаю с фрейморками<b> React JS, Redux, NativeScript, Vue JS, Vuex</b> Уровень английского <i>intermediate</i>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="block-resume__about-myself p-2" id="about-me">
-                                        <p class="bg-info p-3 text-white">
-                                            <b>Про меня</b>
-                                        </p>
+                        </div>
+
+                        <div class="block-resume__education mt-4">
+                            <div class="row justify-content-center">
+                                <div class="col-12 center mx-auto p-2">
+                                    <div class="block-resume__icon rounded-circle center">
+                                        <i class="fas fa-graduation-cap" style="color: #bdff5c; font-size: 70px"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center text-white">
+                                <div class="col-10">
+                                    <div class="block-resume_text-me text-center">
                                         <ul class="p-0">
-                                            <li><span class="text-muted">Имя:</span> Мелешко Роман</li>
-                                            <li><span class="text-muted">Дата рождения:</span> 28 декабря 1988</li>
-                                            <li><span class="text-muted">Город</span> Харьков</li>
+                                            <li>ХНУРЭ</li>
+                                            <li><span class="text-color">Факультет:</span> Радиотехнический</li>
+                                            <li><span class="text-color">Специальность:</span> Система технической
+                                                защиты информации и кибезбезопасность
+                                            </li>
+                                            <li>Высшее: c 1.09.2011 по 10.01.2018</li>
                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-resume__work mt-4">
+                            <div class="row justify-content-center">
+                                <div class="col-12 center mx-auto p-2">
+                                    <div class="block-resume__icon rounded-circle center">
+                                        <i class="fas fa-desktop" style="color: #bdff5c; font-size: 60px"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center text-white">
+                                <div class="col-10">
+                                    <div class="block-resume_text-me text-center">
                                         <p>
-                                            <b>Опыт работы</b>
-                                        </p>
-                                        <p>
-                                            <span class="text-muted">Программист</span> Front-end в компании IT-SERVE
+                                            <span class="text-color">Программист</span> Front-end в компании IT-SERVE
                                             с 15.02.19 по 16.10.19 г.Харьков.Разрабока мобильных приложений на NativeScript.
                                         </p>
                                         <p>
-                                            <span class="text-muted">Программист</span> Front-end разработка онлайн
+                                            <span class="text-color">Программист</span> Front-end разработка онлайн
                                             магазина на <b>Laravel</b> с использоваием фреймворк <b>Vue.js</b> и
                                             <b>Vuex</b> c 24.10.19 по 03.02.2020
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12">
-                                     <div class="block-resume__education">
-                                         <p class="bg-info p-3 text-white" id="education">
-                                             <b>Образование</b>
-                                         </p>
-                                         <ul class="p-0">
-                                             <li>ХНУРЭ</li>
-                                             <li><span class="text-muted">Факультет:</span> Радиотехнический</li>
-                                             <li><span class="text-muted">Специальность:</span> Система технической
-                                             защиты информации и кибезбезопасность
-                                             </li>
-                                             <li>Высшее: c 1.09.2011 по 10.01.2018</li>
-                                         </ul>
-                                     </div>
+                        </div>
+
+                        <div class="block-resume__hobby mt-4 mb-5">
+                            <div class="row justify-content-center">
+                                <div class="col-12 center mx-auto p-2">
+                                    <div class="block-resume__icon rounded-circle center">
+                                        <i class="fas fa-palette" style="color: #bdff5c; font-size: 80px"></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="block-resume__hobby pb-3" id="hobby">
-                                        <p class="bg-info p-3 text-white">
-                                            <b>Хобби</b>
-                                        </p>
+                            <div class="row justify-content-center text-white">
+                                <div class="col-10">
+                                    <div class="block-resume_text-me text-center">
                                         <p>
                                             Из хобби хотелось отметить любовь к рисованию.Когда я демонстрирую свои работы
                                             друзьям все они говорять что у меня есть талант)Так же отмечу свое увлечение                                         спортом так как есть небольшие достижения в данном направлении.
@@ -158,16 +130,17 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
                 <footer>
-                    <div class="block-home__block-footer p-3" style="background: #7f8559">
+                    <div class="block-home__block-footer p-3">
                         <div class="row">
                             <div class="col-lg-3 col-md-3 p-3">
-                               <div class="block-home__logo text-center">
-                                   <i class="fab fa-html5" style="color: #bdff5c; font-size: 120px"></i>
-                               </div>
+                                <div class="block-home__logo text-center p-4">
+                                    <span class="block-home__logo-text p-1">Front end</span>
+                                </div>
                             </div>
                             <div class="col-lg-3 col-md-3 p-3">
                                 <div class="block-home__contact-me">
@@ -181,27 +154,27 @@
                                     <h5><b>Местонахождения</b></h5>
                                     <div class="text-white"><span>г.</span> Харьков</div>
                                 </div>
-                           </div>
+                            </div>
                             <div class="col-lg-3 col-md-3 p-3">
                                 <div class="block-home__icons">
                                     <h5><b>Связь</b></h5>
                                     <div class="d-flex">
-                                       <div class="p-2 text-center border rounded-circle">
-                                           <a class="text-white" href="https://github.com/RomanMeleshko"><i class="fab fa-github"></i></a>
-                                       </div>
-                                        <div class="ml-2 p-2 text-center border rounded-circle">
+                                        <div class="p-2 text-center border rounded-circle icon">
+                                            <a class="text-white" href="https://github.com/RomanMeleshko"><i class="fab fa-github"></i></a>
+                                        </div>
+                                        <div class="ml-2 p-2 text-center border rounded-circle icon">
                                             <a class="text-white" href="#"><i class="fab fa-vk"></i></a>
                                         </div>
-                                        <div class="ml-2 p-2 text-center border rounded-circle">
+                                        <div class="ml-2 p-2 text-center border rounded-circle icon">
                                             <a class="text-white" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                                         </div>
-                                        <div class="ml-2 p-2 text-center border rounded-circle">
+                                        <div class="ml-2 p-2 text-center border rounded-circle icon">
                                             <a class="text-white" href="https://www.instagram.com/?hl=ru"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                       </div>
+                        </div>
                         <hr />
                         <span>&copy; 2020 центр разработки web-приложений</span>
                     </div>
