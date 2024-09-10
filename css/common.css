@@ -24,9 +24,24 @@
 
 
 body {
-    background: rgba(18, 24, 17, 0.78);
+    /*background: rgba(18, 24, 17, 0.78);*/
 
 }
+
+
+
+#remoteVideo,
+#localVideo {
+    width: inherit;
+    height: 300px;
+    border: 1px solid red;
+}
+
+#localVideo {
+    border: 1px solid blue;
+}
+
+
 /*body:before {*/
 /*    content: "";*/
 
